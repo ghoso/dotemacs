@@ -229,3 +229,11 @@
 ;; Git
 ;;
 (require 'magit)
+;;
+;; Powerline
+;;
+(require 'powerline)
+;;
+;;  Go
+;;
+(require 'go-mode-load)
