@@ -39,10 +39,19 @@
 (if (boundp 'window-system)
     (setq initial-frame-alist
           (append (list
-                   '(width . 180)
-                   '(height . 50))
+                   '(width . 80)
+                   '(height . 40)
+                   '(background-color . "black")
+                   '(foreground-color . "white")
+                   '(cursor-color . "white") 
+                   )
                   initial-frame-alist)))
 (setq default-frame-alist initial-frame-alist)
+;; フォント設定
+(set-face-attribute 'default nil
+:family "Menlo" ;; font 
+:height 120) ;; font size
+
 ;; 起動時のスプラッシュ画面を非表示
 (setq inhibit-startup-message t)
 ;; エラー時の画面のフラッシュを抑制
@@ -52,9 +61,9 @@
 ;; 対応する括弧をハイライト
 (show-paren-mode t)
 ;; いらないものを消す
-;;(menu-bar-mode 0)
-;;(tool-bar-mode 0)
-;;(scroll-bar-mode 0)
+(menu-bar-mode 0)
+(tool-bar-mode 0)
+(scroll-bar-mode 0)
 ;; カーソル位置表示
 (line-number-mode 1)
 (column-number-mode 1)
