@@ -3,7 +3,7 @@
 ;;
 ;; Created by Go Hosohara (go.hosohara@gmail.com)
 ;; Created at 2014/Mar/14
-j
+;;
 ;; ~/.emacs.d/lisp 以下全部読み込み
 (let ((default-directory (expand-file-name "~/.emacs.d/lisp")))
   (add-to-list 'load-path default-directory)
@@ -26,11 +26,11 @@ j
     markdown-mode
     scss-mode
     haskell-mode
-    js2-mode
+;;    js2-mode
     ruby-block
     google-c-style
     yaml-mode
-    flycheck
+;;    flycheck
     exec-path-from-shell
     yasnippet
     dropdown-list
@@ -55,7 +55,7 @@ j
     expand-region
     multiple-cursors
     jade-mode
-    coffee-mode
+;;    coffee-mode
     haml-mode
     dash-at-point
     ))
