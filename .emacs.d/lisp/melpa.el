@@ -83,7 +83,7 @@ if non-nil."
   (when (and package-filter-function
              (funcall package-filter-function
                       (car package)
-                      (package-desc-vers (cdr package))
+                      (package--ac-desc-version (cdr package))
                       archive))
     ad-do-it))
 
